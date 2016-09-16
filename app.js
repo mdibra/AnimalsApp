@@ -6,6 +6,9 @@ animals.controller('animalsController', ['$scope', '$http', function($scope, $ht
 		
 		$scope.animals = data;
 		
+	})
+	.error(function(data){
+		console.log(data);
 	});
 	
 }]);
